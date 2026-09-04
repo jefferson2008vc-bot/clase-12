@@ -62,14 +62,12 @@ def mostrar_disponibles():
                 disponibles.append(f"{letras_filas[i]}{j+1}")
     
         if disponibles:
-         print(join(disponibles))
+         print("  • " + ", ".join(disponibles))
         else:
          print("No hay asientos disponibles. ¡Sala completa!")
         print()
 
 
-# 5. MENÚ PRINCIPAL
-# ----------------------
 def menu_principal():
     print("Opciones del sistema")
     while True:
